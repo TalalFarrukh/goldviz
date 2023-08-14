@@ -1,0 +1,296 @@
+/* Styling for the About Us Page */
+
+.mainPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4ED87;
+}
+
+.aboutUsSection {
+  background-color: white;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.aboutUsContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutUsTitle {
+  font-size: 36px;
+  color: #374b40;
+  margin-bottom: 20px;
+}
+
+.aboutUsText {
+  font-size: 18px;
+  color: #555; 
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+  
+
+.portfolioSection {
+  background-color: #f9f9f9; 
+  padding: 0px 30px;
+  text-align: center;
+}
+
+
+.portfolioHeading {
+  font-size: 32px;
+  color: #374b40;
+}
+
+.portfolioContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolioItem, #whyGoldVizContact {
+  background-color: #fff;
+  border: 1px solid #e0e0e0; 
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolioItem:hover, #whyGoldVizContact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioItemTitle {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.portfolioItemText {
+  font-size: 16px;
+  color: #555; 
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Add styling for separating line */
+.sectionSeparator {
+  width: 100%;
+  heigth: 100%;
+  border-top: 20px solid #374b40; 
+}
+  
+.whyGoldvizSection {
+  background-color: #f9f9f9;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.whyGoldvizContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.whyGoldvizCard {
+  background-color: #fff; /* White background for each card */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+}
+
+.whyGoldvizTitle {
+  font-size: 24px;
+  color: #374b40;
+  margin-top: 10px;
+}
+
+.whyGoldvizText {
+  font-size: 16px;
+  color: #555; 
+  margin-top: 10px;
+  line-height: 1.6;
+}
+  
+/* Styling for the Our Team Section */
+.ourTeamSection {
+  background-color: #f9f9f9;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.ourTeamContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.teamMember {
+  background-color: #fff;
+  border: 1px solid #e0e0e0; 
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.teamMemberImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.teamMemberImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teamMemberName {
+  font-size: 24px;
+  color: #374b40;
+  margin-top: 10px;
+}
+
+.teamMemberRole {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.teamMemberDescription {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+  
+.contactUsSection {
+  padding: 0px 30px;
+  padding-bottom: 35px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.contactUsContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contactUsDetails {
+  background-color: #fff; /* White background for the contact details container */
+  border-radius: 10px; /* Rounded corners */
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+}
+
+.contactUsTitle {
+  font-size: 32px;
+  color: #374b40; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+.contactUsInfo {
+  font-size: 18px;
+  color: #555; /* Slightly darker text color */
+  margin: 15px 0;
+}
+
+.contactUsInfo a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+
+  .header {
+    background-color: #374b40; /* Mid-dark greenish */
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    width: auto;
+    height: 80px;
+  }
+  
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navButton {
+  background-color: #F4ED87; 
+  color: #374b40; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.navButton:hover {
+  background-color: #f0f26f;
+  transform: translateY(-3px); 
+}
+
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+  }
+
+  .logo img {
+    height: 40px;
+    margin-left: 60%;
+  }
+  
+}
+
+  
+
+  .footer {
+    background-color: #374b40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .footer a {
+    color: #ff9900; /* Pale yellow */
+    text-decoration: none;
+  }
+  
+  
