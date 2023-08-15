@@ -1,5 +1,3 @@
-/* Styling for the About Us Page */
-
 .mainPageContainer {
   display: flex;
   flex-direction: column;
@@ -97,12 +95,12 @@
 }
 
 .whyGoldvizCard {
-  background-color: #fff; /* White background for each card */
-  border: 1px solid #e0e0e0; /* Light gray border */
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
   padding: 20px;
   margin-bottom: 40px;
   text-align: left;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .whyGoldvizTitle {
@@ -186,89 +184,93 @@
 }
 
 .contactUsDetails {
-  background-color: #fff; /* White background for the contact details container */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #fff;
+  border-radius: 10px;
   padding: 40px;
   text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contactUsTitle {
   font-size: 32px;
-  color: #374b40; /* Dark text color */
+  color: #374b40; 
   margin-bottom: 20px;
 }
 
 .contactUsInfo {
   font-size: 18px;
-  color: #555; /* Slightly darker text color */
+  color: #555; 
   margin: 15px 0;
 }
 
 .contactUsInfo a {
-  color: #007bff; /* Blue link color */
+  color: #007bff; 
   text-decoration: none;
 }
 
 
-  .header {
-    background-color: #374b40; /* Mid-dark greenish */
-    color: #fff;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo img {
-    width: auto;
-    height: 80px;
-  }
-  
-
-.navList {
-  list-style: none;
+/* General styles for larger screens */
+.navbar {
+  background-color: #374b40;
+  overflow: hidden;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-}
-
-.navButton {
-  background-color: #F4ED87; 
-  color: #374b40; 
   padding: 10px 20px;
+}
+
+.navbarLogo img {
+  width: auto;
+  height: 60px;
+}
+
+.navbarMenu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbarMenu a:hover {
+  color: #F4ED87;
+}
+
+.menuButton {
+  display: none; /* Hide the button on larger screens */
+  background: none;
   border: none;
-  border-radius: 5px;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  font-weight: bold;
 }
 
-.navButton:hover {
-  background-color: #f0f26f;
-  transform: translateY(-3px); 
-}
-
+/* Media query for mobile devices */
 @media (max-width: 768px) {
-  .navList {
-    display: none;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .logo img {
-    height: 40px;
-    margin-left: 60%;
+  .navbarMenu {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
   }
-  
+
+  .navbarMenu.active {
+    display: block;
+  }
+
+  .navbarMenu a {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .menuButton {
+    display: block; 
+    margin-top: 10px;
+  }
 }
 
-  
 
   .footer {
     background-color: #374b40;

@@ -7,20 +7,19 @@ const LandingPage = () => {
   return (
 
     <div>
-        <header className={styles.header}>
-        <nav className={styles.nav}>
-            <div className={styles.logo}>
-                <Image src="/logo.png" width={100} height={100} />
+
+        <div className={styles.navbar}>
+            <div className={styles.navbarLogo}>
+                <img src="/logo.png" alt="Logo" width={150} height={50} />
             </div>
-            <ul className={styles.navList}>
-            {/* Add your navigation links here */}
-            </ul>
-        </nav>
-        <div className={styles.hero}>
-            <h1>Welcome to Goldviz</h1>
-            <p>Your one-stop shop for fresh agricultural products.</p>
-            <a href="/MainPage" className={styles.ctaButton}>Explore</a>
         </div>
+
+        <header className={styles.header}>
+            <div className={styles.hero}>
+                <h1>Welcome to Goldviz</h1>
+                <p>Your one-stop shop for fresh agricultural products.</p>
+                <a href="/MainPage" className={styles.ctaButton}>Explore</a>
+            </div>
         </header>
 
         <section className={styles.mapSection}>

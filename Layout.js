@@ -1,42 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles/MainPage.module.css'
 import Link from 'next/link';
 
 const Layout = ({ children }) => {
 
+    const [menuActive, setMenuActive] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuActive(!menuActive);
+    };
+
   return (
     <div>
-        <header className={styles.header}>
-            <nav className={styles.nav}>
-                <div className={styles.logo}>
-                    <Link href="/">
-                    <img src="/logo.png" alt="Logo" width={100} height={100} />
-                    </Link>
-                </div>
-                <ul className={styles.navList}>
-                    <li>
-                        <Link href="#portfolio">
-                        <div className={styles.navButton}>Our Portfolio</div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#why">
-                        <div className={styles.navButton}>Why Goldviz</div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#team">
-                        <div className={styles.navButton}>Our Team</div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#contactUs">
-                        <div className={styles.navButton}>Contact Us</div>
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div className={styles.navbar}>
+            <div className={styles.navbarLogo}>
+                <img src="/logo.png" alt="Logo" width={150} height={50} />
+            </div>
+            <div className={`${styles.navbarMenu} ${menuActive ? styles.active : ''}`}>
+                <Link href="/">Home</Link>
+                <Link href="#portfolio">Portfolio</Link>
+                <Link href="#why">Why Us</Link>
+                <Link href="#team">Team</Link>
+                <Link href="#contactUs">Contact</Link>
+            </div>
+            <button className={styles.menuButton} onClick={toggleMenu}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="white"
+                    >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 18h16v-2H4zm0-5h16v-2H4zm0-5h16V6H4z" />
+                </svg>
+            </button>
+        </div>
         {children}
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
@@ -49,6 +48,8 @@ const Layout = ({ children }) => {
             </div>
         </footer>
     </div>
+
+    
   );
 };
 
