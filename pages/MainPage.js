@@ -14,89 +14,80 @@ const AboutUsPage = () => {
             <p className={styles.aboutUsText}>We successfully ship fruits and vegetables to the GCC Countries in the Middle East and are currently exploring supply chain partners across Europe and the Far East. We are also interested in establishing direct working relations with industrial and retail sectors globally.</p>
             <p className={styles.aboutUsText}>At Goldviz, our focus is on super-fresh, highest-quality produce at market-competitive rates. We export Pakistan’s world-renowned fruits and vegetables while promoting less-known crops as well.</p>
             <p className={styles.aboutUsText}>Through our subsidiary – Goldviz Fresh – we also cater to the domestic market in Pakistan. Our joint venture with Rahman Khalis Store in Lahore sells daily fresh fruits and vegetables to retail customers locally. Goldviz Fresh supplies HORECA, Hospitals, and corporate clients as well.</p>
+          
+            <h2 className={styles.aboutUsVisionMission}>Our Vision</h2>
+            <p className={styles.aboutUsText}>Become every customer’s choice for quality fruits and vegetables both in local and international markets.</p>
+          
+            <h2 className={styles.aboutUsVisionMission}>Our Mission</h2>
+            <p className={styles.aboutUsText}>Continuously research and enhance the capability to deliver internationally certified and approved products through competent teams and external partners thereby achieving excellence in all aspects of market leadership.</p>
           </div>
         </section>
 
         <div className={styles.sectionSeparator}></div>
 
-        <section className={styles.portfolioSection} id="portfolio">
+        <section className={styles.portfolioSection} id="products">
           <div className={styles.portfolioContent}>
-            <h2 className={styles.portfolioHeading}>Our Portfolio</h2>
+            <h2 className={styles.portfolioHeading}>Our Products</h2>
             <div className={styles.portfolioItem}>
-              <div className={styles.portfolioItemImage}>
+              <div>
                 <Image src="/Mandarin.jpg" width={150} height={100} alt="Mandarin" />
+                <Image src="/mango.jpeg" width={150} height={100} alt="Mango" style={{ marginLeft: "10px" }} />
+                <Image src="/Tumeric.jpeg" width={150} height={100} alt="Mango" style={{ marginLeft: "10px" }} />
               </div>
-              <h3 className={styles.portfolioItemTitle}>Export through Goldviz Trade Solutions</h3>
-              <p className={styles.portfolioItemText}>
-                We have successfully exported the following seasonal products to international partners both by sea and air:
-                Mandarin, Fresh Turmeric, Potato, Fresh Peas, Fresh Carrots, Guava, Sugarcane Cuts.
-              </p>
+              <h3 className={styles.portfolioItemTitle}>Export</h3>
+              <div className={styles.portfolioItemText}>
+                Goldviz Trade Solutions has been successfully exporting the following seasonal products to international partners both by sea and air:
+                <ul>
+                  <li>Mango</li>
+                  <li>Mandarin</li>
+                  <li>Fresh Tumeric</li>
+                  <li>Potato</li>
+                  <li>Fresh Peas</li>
+                  <li>Fresh Carrots</li>
+                  <li>Guava</li>
+                  <li>Sugarcane Cuts</li>
+                </ul>
+                In addition, we can supply any other seasonal fruits or vegetables as per customer requirements.
+              </div>
             </div>
 
             <div className={styles.portfolioItem}>
+              <div>
+                <Image src="/goldvizFresh.png" width={150} height={90} alt="Goldviz Fresh" />
+                <Image src="/shkh.png" width={130} height={110} alt="Shaukat Khanum" style={{ marginLeft: "10px" }} />
+              </div>
               <h3 className={styles.portfolioItemTitle}>Local Business – Goldviz Fresh</h3>
               <p className={styles.portfolioItemText}>
-                We sell daily sourced fresh fruits and vegetables to retail consumers through our joint venture with Rahman Khalis Store.
-                In addition, we supply HORECA, Medical, and Corporate clients as per their daily requirements.
-                Goldviz Fresh also has the capability to provide customized packaging solutions to our local customers based on their specific needs.
+                Through Goldviz Fresh, we sell daily sourced fresh fruits and vegetables to retail consumers through our joint venture with Rahman Khalis.                 
               </p>
-            </div>
-
-            <div className={styles.portfolioItem}>
-              <div className={styles.portfolioItemImage}>
-                <Image src="/mango.jpeg" width={150} height={100} alt="Mango" />
-              </div>
-              <h3 className={styles.portfolioItemTitle}>Mango – everyone’s favorite, our specialty</h3>
               <p className={styles.portfolioItemText}>
-                Every year, our customers enjoy superior-quality mangoes expertly sourced by us throughout the season (May to September).
-                
+                In addition, we supply HORECA, Medical, and Corporate clients as per their daily requirements. One of our prestigious accounts is Shaukat Khanum Memorial Cancer Hospital and Research Centre where we supply fresh fruits and vegetables daily as per their requirements. 
               </p>
-            </div>
-
-            <div className={styles.portfolioItem}>
-                <Link href="#contactUs">
-                    <p className={styles.portfolioItemText} style={{ textAlign: "center", fontWeight: "bolder", fontSize: "20px", color: "#374b40" }}>
-                        While the above is a snapshot of what we have supplied already, we can handle any other seasonal fruits or vegetables as 
-                        per your requirements as well - Talk to us!
-                    </p>
-                </Link>
+              <p className={styles.portfolioItemText}>
+                Goldviz Fresh has the capability to provide customized packaging solutions to our local customers based on their specific needs. 
+              </p>
+              <p className={styles.portfolioItemText}>
+                Every year, our customers also enjoy superior-quality mangoes expertly sourced by us throughout the season (May to September).
+              </p>
             </div>
           </div>
         </section>
 
         <div className={styles.sectionSeparator}></div>
 
-        <section className={styles.whyGoldvizSection} id="why">
+        <section className={styles.whyGoldvizSection} id="partners">
           <div className={styles.whyGoldvizContent}>
-            <h2 className={styles.portfolioHeading}>Why Goldviz</h2>
+            <h2 className={styles.portfolioHeading}>Our Partners</h2>
             
             <div className={styles.whyGoldvizCard}>
-              <h3 className={styles.whyGoldvizTitle}>Gold Standard Services</h3>
-              <p className={styles.whyGoldvizText}>
-                We offer world-class service and support our partners end-to-end. Our supply chain solutions are tailored to each specific demand or order covering all aspects of cost, quality, and required documentation within committed timelines.
-              </p>
-            </div>
-
-            <div className={styles.whyGoldvizCard}>
-              <h3 className={styles.whyGoldvizTitle}>Expertise</h3>
-              <p className={styles.whyGoldvizText}>
-                Goldviz team is professional and knowledgeable with more than 50 years of experience among them. In addition, we have carefully selected our supply chain partners and closely work with them to ensure consistent quality delivered to you.
-              </p>
-            </div>
-
-            <div className={styles.whyGoldvizCard}>
-              <h3 className={styles.whyGoldvizTitle}>Satisfied Customers</h3>
-              <p className={styles.whyGoldvizText}>
-                We have a solid track record of 100% Customer satisfaction score to date. We want to grow with you and that is why we consider you our business partners, not customers.
-              </p>
-            </div>
-
-            <div id={styles.whyGoldVizContact} className={styles.whyGoldvizCard}>
-                <Link href="#contactUs">
-                    <p className={styles.whyGoldvizText} style={{ textAlign: "center", fontWeight: "bolder", fontSize: "20px", color: "#374b40" }}>
-                        Let’s start the journey towards success together – reach out to us now! 
-                    </p>
-                </Link>
+              <div className={styles.whyGoldvizText}>
+                At Goldviz, we are proud of our solid relationship with our business partners who have grown with us through the years. We are happy to share additional details based on specific queries.
+                <ul>
+                  <li>RAAZIQ INTERNATIONAL – Logistics Service Provider</li>
+                  <li>ROSHAN PACKAGING – Packaging Supplier</li>
+                  <li>REHMAN KHALIS – Retail JV Partner</li>
+                </ul>
+              </div>
             </div>
                     
           </div>

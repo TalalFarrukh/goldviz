@@ -18,8 +18,8 @@ const Layout = ({ children }) => {
             </div>
             <div className={`${styles.navbarMenu} ${menuActive ? styles.active : ''}`}>
                 <Link href="/">Home</Link>
-                <Link href="#portfolio">Portfolio</Link>
-                <Link href="#why">Why Us</Link>
+                <Link href="#products">Products</Link>
+                <Link href="#partners">Partners</Link>
                 <Link href="#team">Team</Link>
                 <Link href="#contactUs">Contact</Link>
             </div>

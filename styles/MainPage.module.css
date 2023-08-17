@@ -17,10 +17,14 @@
   margin: 0 auto;
 }
 
-.aboutUsTitle {
+.aboutUsTitle, .aboutUsVisionMission {
   font-size: 36px;
   color: #374b40;
   margin-bottom: 20px;
+}
+
+.aboutUsVisionMission {
+  margin-top: 50px;
 }
 
 .aboutUsText {
