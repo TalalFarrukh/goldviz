@@ -42,7 +42,7 @@ export default function Navbar() {
               onClick={handleNavClick}
             >
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="GoldViz Travels & Tours"
                 width={220}
                 height={75}

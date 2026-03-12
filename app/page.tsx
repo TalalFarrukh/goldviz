@@ -15,8 +15,8 @@ const jsonLd = {
   "@type": "TravelAgency",
   name: "GoldViz Travels & Tours",
   alternateName: "GTT",
-  url: "https://www.goldviztravelsandtours.com",
-  logo: "https://www.goldviztravelsandtours.com/logo.png",
+  url: "https://www.goldviztravels.com",
+  logo: "https://www.goldviztravels.com/logo.webp",
   description:
     "GoldViz Travels & Tours offers trusted Umrah packages, international ticketing, visa processing, hotel bookings and transport services across Pakistan.",
   slogan: "Where Comfort Meets True Care.",

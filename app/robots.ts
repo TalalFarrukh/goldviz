@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://www.goldviztravelsandtours.com/sitemap.xml",
-    host: "https://www.goldviztravelsandtours.com",
+    sitemap: "https://www.goldviztravels.com/sitemap.xml",
+    host: "https://www.goldviztravels.com",
   };
 }

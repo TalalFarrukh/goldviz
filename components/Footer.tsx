@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <div className="mb-2">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="GoldViz Travels & Tours"
                 width={200}
                 height={70}
@@ -166,7 +166,7 @@ export default function Footer() {
             © 2026 GoldViz Travels & Tours · All Rights Reserved
           </p>
           <p className="font-[family-name:var(--font-body)] text-white/20 text-xs">
-            www.goldviztravelsandtours.com
+            www.goldviztravels.com
           </p>
         </div>
       </div>
