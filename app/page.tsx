@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
+import TrustBadges from "@/components/TrustBadges";
 import UmrahSpotlight from "@/components/UmrahSpotlight";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
@@ -36,6 +37,24 @@ const jsonLd = {
   sameAs: [
     "https://facebook.com",
     "https://instagram.com",
+  ],
+  memberOf: [
+    {
+      "@type": "Organization",
+      name: "Travel Agents Association of Pakistan (TAAP)",
+    },
+    {
+      "@type": "Organization",
+      name: "Lahore Chamber of Commerce and Industry (LCCI)",
+    },
+  ],
+  knowsAbout: [
+    "Umrah travel packages",
+    "Hajj pilgrimage services",
+    "International flight ticketing",
+    "Visa processing Pakistan",
+    "Hotel bookings Pakistan",
+    "FlyJinnah authorised booking",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -114,6 +133,7 @@ export default function Home() {
         <UmrahSpotlight />
         <HowItWorks />
         <Testimonials />
+        <TrustBadges />
         <Contact />
       </main>
       <Footer />

@@ -2,32 +2,33 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MessageCircle, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Send, CheckCircle2 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const CONTACT_OPTIONS = [
   {
     id: "phone",
-    Icon: Phone,
     label: "Call Us",
     value: "+92-302-0438715",
     href: "tel:+923020438715",
     color: "#6b9e2b",
+    icon: "phone",
   },
   {
     id: "whatsapp",
-    Icon: MessageCircle,
     label: "WhatsApp",
     value: "Chat with our team",
     href: "https://wa.me/923020438715?text=Hi%20GTT%2C%20I%27d%20like%20to%20enquire%20about%20your%20services.",
     color: "#25D366",
+    icon: "whatsapp",
   },
   {
     id: "email",
-    Icon: Mail,
     label: "Email Us",
     value: "travel@goldviz.com.pk",
     href: "mailto:travel@goldviz.com.pk",
     color: "#3a9bd5",
+    icon: "email",
   },
 ];
 
@@ -46,6 +47,16 @@ type FormState = {
   service: string;
   message: string;
 };
+
+function ContactIcon({ id, color }: { id: string; color: string }) {
+  if (id === "whatsapp") {
+    return <FaWhatsapp size={22} style={{ color }} />;
+  }
+  if (id === "phone") {
+    return <Phone size={22} strokeWidth={1.75} style={{ color }} />;
+  }
+  return <Mail size={22} strokeWidth={1.75} style={{ color }} />;
+}
 
 export default function Contact() {
   const [form, setForm] = useState<FormState>({
@@ -68,8 +79,6 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // EmailJS integration point — replace with your service/template/public key
-    // await emailjs.send('SERVICE_ID', 'TEMPLATE_ID', form, 'PUBLIC_KEY');
     await new Promise((resolve) => setTimeout(resolve, 1200));
     setLoading(false);
     setSubmitted(true);
@@ -99,35 +108,28 @@ export default function Contact() {
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          {CONTACT_OPTIONS.map((opt) => {
-            const { Icon } = opt;
-            return (
-              <a
-                key={opt.id}
-                href={opt.href}
-                target={opt.id !== "phone" ? "_blank" : undefined}
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-[#e8e0d0] hover:shadow-md hover:border-[#c9a227] transition-all duration-300"
+          {CONTACT_OPTIONS.map((opt) => (
+            <a
+              key={opt.id}
+              href={opt.href}
+              target={opt.id !== "phone" ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-[#e8e0d0] hover:shadow-md hover:border-[#c9a227] transition-all duration-300"
+            >
+              <div
+                className="w-12 h-12 rounded-full flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
+                style={{ backgroundColor: `${opt.color}18` }}
               >
-                <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
-                  style={{ backgroundColor: `${opt.color}18` }}
-                >
-                  <Icon
-                    size={22}
-                    strokeWidth={1.75}
-                    style={{ color: opt.color }}
-                  />
-                </div>
-                <p className="font-[family-name:var(--font-heading)] font-bold text-[#1a1a2e] text-base mb-1">
-                  {opt.label}
-                </p>
-                <p className="font-[family-name:var(--font-body)] text-[#7a7a7a] text-xs break-all">
-                  {opt.value}
-                </p>
-              </a>
-            );
-          })}
+                <ContactIcon id={opt.id} color={opt.color} />
+              </div>
+              <p className="font-[family-name:var(--font-heading)] font-bold text-[#1a1a2e] text-base mb-1">
+                {opt.label}
+              </p>
+              <p className="font-[family-name:var(--font-body)] text-[#7a7a7a] text-xs break-all">
+                {opt.value}
+              </p>
+            </a>
+          ))}
         </motion.div>
 
         {/* Contact form */}
@@ -149,8 +151,7 @@ export default function Contact() {
                 Enquiry Sent!
               </h3>
               <p className="font-[family-name:var(--font-body)] text-[#7a7a7a] text-sm">
-                Thank you, {form.name}. We&apos;ll be in touch with you very
-                soon.
+                Thank you, {form.name}. We&apos;ll be in touch with you very soon.
               </p>
             </div>
           ) : (

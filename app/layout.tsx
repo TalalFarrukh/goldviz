@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | GoldViz Travels & Tours",
   },
   description:
-    "GoldViz Travels & Tours offers trusted Umrah packages, international ticketing, visa processing, hotel bookings and transport services across Pakistan. Where Comfort Meets True Care.",
+    "GoldViz Travels & Tours — TAAP registered and LCCI affiliated travel agency offering trusted Umrah packages, international ticketing, visa processing, hotel bookings and transport services across Pakistan. Official FlyJinnah partner. Where Comfort Meets True Care.",
   keywords: [
     "Umrah packages Pakistan",
     "Umrah 2026",
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "Umrah family packages",
     "Karachi travel agency",
     "Lahore travel agency",
+    "TAAP registered travel agent Pakistan",
+    "LCCI member travel agency",
+    "FlyJinnah partner travel agency",
+    "FlyJinnah authorised agent Pakistan",
   ],
   authors: [{ name: "GoldViz Travels & Tours", url: BASE_URL }],
   creator: "GoldViz Travels & Tours",
@@ -61,7 +65,7 @@ export const metadata: Metadata = {
     siteName: "GoldViz Travels & Tours",
     title: "GoldViz Travels & Tours | Umrah Packages & Travel Services",
     description:
-      "Trusted Umrah packages, ticketing, visa processing, hotels and transport — serving families across Pakistan. Where Comfort Meets True Care.",
+      "TAAP registered & LCCI affiliated travel agency. Trusted Umrah packages, ticketing, visa processing, hotels and transport — official FlyJinnah partner serving families across Pakistan.",
     images: [
       {
         url: "/og-image.jpg",
@@ -76,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GoldViz Travels & Tours | Umrah Packages & Travel Services",
     description:
-      "Trusted Umrah packages, ticketing, visas, hotels and transport across Pakistan. Where Comfort Meets True Care.",
+      "TAAP registered & LCCI affiliated. Trusted Umrah packages, ticketing, visas, hotels and transport across Pakistan. Official FlyJinnah partner.",
     images: ["/og-image.jpg"],
   },
 };

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const TRUST_ITEMS = [
   "Custom Packages",
@@ -120,6 +121,15 @@ export default function Hero() {
               <span>{item}</span>
             </div>
           ))}
+
+          {/* Divider — desktop only */}
+          <div className="hidden sm:block w-px h-4 bg-white/20 shrink-0" />
+
+          {/* FlyJinnah partner badge */}
+          <div className="inline-flex items-center gap-1.5 bg-[#E8003D] text-white font-[family-name:var(--font-body)] font-bold text-xs px-3 py-1.5 rounded-full">
+            <Image src="/fjMiniLogo.webp" alt="FlyJinnah" width={16} height={16} className="w-4 h-4 object-contain shrink-0 brightness-0 invert" />
+            Official FlyJinnah Partner
+          </div>
         </motion.div>
       </div>
 
