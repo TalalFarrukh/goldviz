@@ -1,7 +1,33 @@
 import type { Metadata } from "next";
+import {
+  Cormorant_Garamond,
+  Playfair_Display,
+  Lato,
+} from "next/font/google";
 import "./globals.css";
 
 const BASE_URL = "https://www.goldviztravels.com";
+
+const cormorantDisplay = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-display",
+});
+
+const playfairHeading = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-heading",
+});
+
+const latoBody = Lato({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  display: "swap",
+  variable: "--font-body",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -91,7 +117,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-PK">
+    <html
+      lang="en-PK"
+      className={`${cormorantDisplay.variable} ${playfairHeading.variable} ${latoBody.variable}`}
+    >
       <body className="antialiased">{children}</body>
     </html>
   );
