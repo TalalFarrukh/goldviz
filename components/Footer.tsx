@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MessageCircle, Facebook, Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const QUICK_LINKS = [
   { label: "Home", href: "#home" },
@@ -30,7 +31,7 @@ const SOCIAL_LINKS = [
     label: "Instagram",
   },
   {
-    Icon: MessageCircle,
+    Icon: FaWhatsapp,
     href: "https://wa.me/923020438715",
     label: "WhatsApp",
   },
@@ -123,7 +124,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 text-white/50 hover:text-[#c9a227] transition-colors"
                 >
-                  <MessageCircle size={14} className="shrink-0 text-[#c9a227]" strokeWidth={1.75} />
+                  <FaWhatsapp size={16} className="shrink-0 text-[#c9a227]" />
                   <span className="font-[family-name:var(--font-body)] text-sm">
                     WhatsApp Us
                   </span>
