@@ -1,22 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MessageCircle, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const QUICK_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#why-us" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#why-us" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const SERVICE_LINKS = [
-  { label: "Umrah Packages", href: "#" },
-  { label: "Ticketing", href: "#" },
-  { label: "Visas", href: "#" },
-  { label: "Hotels", href: "#" },
-  { label: "Transport", href: "#" },
-  { label: "Consultation", href: "#" },
+  { label: "Umrah Packages", href: "/services/umrah" },
+  { label: "Visa Appointments", href: "/services/visa-appointments" },
+  { label: "Travel Insurance", href: "/services/travel-insurance" },
+  { label: "Holiday Tours", href: "/services/holiday-tours" },
+  { label: "Air Tickets", href: "/services/air-tickets" },
+  { label: "Free Consultation", href: "/#contact" },
 ];
 
 const SOCIAL_LINKS = [
