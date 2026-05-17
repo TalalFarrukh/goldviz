@@ -52,12 +52,12 @@ export default function HowItWorks() {
                     delay: index * 0.12,
                     ease: "easeOut",
                   }}
-                  className="flex lg:flex-col items-start lg:items-center gap-5 lg:gap-0 lg:text-center"
+                  className="group flex lg:flex-col items-start lg:items-center gap-5 lg:gap-0 lg:text-center cursor-default"
                 >
                   {/* Mobile vertical connector */}
                   <div className="lg:hidden flex flex-col items-center shrink-0">
                     {/* Number circle */}
-                    <div className="w-14 h-14 rounded-full bg-[#c9a227] flex items-center justify-center text-[#1a1a2e] font-bold text-xl font-[family-name:var(--font-body)] shadow-md shadow-[#c9a227]/20">
+                    <div className="w-14 h-14 rounded-full bg-[#c9a227] flex items-center justify-center text-[#1a1a2e] font-bold text-xl font-[family-name:var(--font-body)] shadow-md shadow-[#c9a227]/20 group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-[#c9a227]/40 transition-all duration-300">
                       {step.number}
                     </div>
                     {index < HOW_IT_WORKS.length - 1 && (
@@ -66,23 +66,23 @@ export default function HowItWorks() {
                   </div>
 
                   {/* Desktop number circle */}
-                  <div className="hidden lg:flex w-16 h-16 rounded-full bg-[#c9a227] items-center justify-center text-[#1a1a2e] font-bold text-2xl font-[family-name:var(--font-body)] shadow-md shadow-[#c9a227]/20 mb-5 mx-auto">
+                  <div className="hidden lg:flex w-16 h-16 rounded-full bg-[#c9a227] items-center justify-center text-[#1a1a2e] font-bold text-2xl font-[family-name:var(--font-body)] shadow-md shadow-[#c9a227]/20 mb-5 mx-auto group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-[#c9a227]/40 group-hover:-rotate-6 transition-all duration-300">
                     {step.number}
                   </div>
 
                   {/* Content */}
                   <div className="lg:px-4">
                     {/* Icon */}
-                    <div className="hidden lg:flex w-10 h-10 rounded-full bg-[#6b9e2b]/10 items-center justify-center mb-4 mx-auto">
+                    <div className="hidden lg:flex w-10 h-10 rounded-full bg-[#6b9e2b]/10 items-center justify-center mb-4 mx-auto group-hover:bg-[#6b9e2b]/20 group-hover:scale-110 transition-all duration-300">
                       {Icon && (
                         <Icon
                           size={18}
-                          className="text-[#6b9e2b]"
+                          className="text-[#6b9e2b] group-hover:rotate-12 transition-transform duration-300"
                           strokeWidth={1.75}
                         />
                       )}
                     </div>
-                    <h3 className="font-[family-name:var(--font-heading)] font-bold text-[#1a1a2e] text-lg mb-2">
+                    <h3 className="font-[family-name:var(--font-heading)] font-bold text-[#1a1a2e] text-lg mb-2 group-hover:text-[#c9a227] transition-colors duration-300">
                       {step.title}
                     </h3>
                     <p className="font-[family-name:var(--font-body)] text-[#7a7a7a] text-sm leading-relaxed">

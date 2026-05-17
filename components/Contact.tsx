@@ -34,10 +34,11 @@ const CONTACT_OPTIONS = [
 
 const SERVICES = [
   "Umrah Package",
-  "Ticketing",
-  "Visa",
+  "Visa / Embassy Appointment",
+  "Travel Insurance",
+  "Holiday Tour",
+  "Air Tickets",
   "Hotel Booking",
-  "Transport",
   "Consultation",
 ];
 
