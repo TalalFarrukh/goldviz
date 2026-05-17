@@ -9,7 +9,7 @@ const UMRAH_FEATURES = [
   "Visa & Documentation Support",
   "Hotel Near Haram — All Budgets",
   "Flight Bookings & Airport Transfers",
-  "24/7 Support During Travel",
+  "Ziyarat Arrangements in Makkah & Madinah",
 ];
 
 const STEPS = [
@@ -63,7 +63,7 @@ export default function UmrahSpotlight() {
             </ul>
 
             <Link
-              href="#contact"
+              href="/#contact"
               className="inline-flex items-center gap-2 bg-[#c9a227] hover:bg-[#e8c84a] text-[#1a1a2e] font-[family-name:var(--font-body)] font-bold text-sm px-7 py-3.5 rounded-full transition-all duration-200 shadow-md shadow-[#c9a227]/20 hover:shadow-[#c9a227]/40"
             >
               Start Planning Your Umrah
