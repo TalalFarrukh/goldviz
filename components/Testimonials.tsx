@@ -15,10 +15,16 @@ function TestimonialCard({
   testimonial: (typeof TESTIMONIALS)[0];
 }) {
   return (
-    <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-[#e8e0d0] h-full flex flex-col">
+    <div className="group bg-white rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-2xl border border-[#e8e0d0] hover:border-[#c9a227]/50 hover:-translate-y-1 h-full flex flex-col transition-all duration-300 relative overflow-hidden">
+      {/* Gold corner accent — appears on hover */}
+      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#c9a227]/0 to-transparent group-hover:from-[#c9a227]/15 transition-all duration-500 pointer-events-none" />
+
       {/* Quote icon */}
       <div className="mb-4">
-        <Quote size={28} className="text-[#c9a227]/30" />
+        <Quote
+          size={28}
+          className="text-[#c9a227]/30 group-hover:text-[#c9a227]/60 group-hover:scale-110 transition-all duration-300"
+        />
       </div>
 
       {/* Stars */}
@@ -27,7 +33,8 @@ function TestimonialCard({
           <Star
             key={i}
             size={15}
-            className="text-[#c9a227] fill-[#c9a227]"
+            className="text-[#c9a227] fill-[#c9a227] group-hover:scale-110 transition-transform duration-300"
+            style={{ transitionDelay: `${i * 40}ms` }}
           />
         ))}
       </div>
@@ -39,7 +46,7 @@ function TestimonialCard({
 
       {/* Author */}
       <div className="flex items-center gap-3 pt-4 border-t border-[#e8e0d0]">
-        <div className="w-10 h-10 rounded-full bg-[#c9a227]/15 flex items-center justify-center text-[#c9a227] font-bold text-xs font-[family-name:var(--font-body)] shrink-0">
+        <div className="w-10 h-10 rounded-full bg-[#c9a227]/15 flex items-center justify-center text-[#c9a227] font-bold text-xs font-[family-name:var(--font-body)] shrink-0 group-hover:bg-[#c9a227]/25 group-hover:scale-110 transition-all duration-300">
           {testimonial.initials}
         </div>
         <div>
