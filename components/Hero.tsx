@@ -91,16 +91,23 @@ export default function Hero() {
         >
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 bg-[#c9a227] hover:bg-[#e8c84a] text-[#1a1a2e] font-[family-name:var(--font-body)] font-bold text-base px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-[#c9a227]/20 hover:shadow-[#c9a227]/40 hover:scale-105"
+            className="group inline-flex items-center gap-2 bg-[#c9a227] hover:bg-[#e8c84a] text-[#1a1a2e] font-[family-name:var(--font-body)] font-bold text-base px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-[#c9a227]/20 hover:shadow-[#c9a227]/40 hover:scale-105 hover:-translate-y-0.5"
           >
             Plan My Umrah
-            <ArrowRight size={18} />
+            <ArrowRight
+              size={18}
+              className="group-hover:translate-x-1 transition-transform duration-200"
+            />
           </Link>
           <Link
             href="#services"
-            className="inline-flex items-center gap-2 border-2 border-white/30 hover:border-[#c9a227] text-white hover:text-[#c9a227] font-[family-name:var(--font-body)] font-bold text-base px-8 py-4 rounded-full transition-all duration-200"
+            className="group inline-flex items-center gap-2 border-2 border-white/30 hover:border-[#c9a227] text-white hover:text-[#c9a227] font-[family-name:var(--font-body)] font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:scale-105"
           >
             Explore Our Services
+            <ArrowRight
+              size={18}
+              className="opacity-0 -ml-7 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300"
+            />
           </Link>
         </motion.div>
 

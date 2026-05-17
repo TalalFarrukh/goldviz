@@ -67,17 +67,17 @@ export default function WhyUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-                className="flex flex-col items-center text-center p-6 rounded-2xl bg-white shadow-sm border border-[#e8e0d0] hover:shadow-md transition-shadow duration-300"
+                className="group flex flex-col items-center text-center p-6 rounded-2xl bg-white shadow-sm border border-[#e8e0d0] hover:shadow-xl hover:border-[#c9a227]/40 hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Icon circle */}
-                <div className="w-14 h-14 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-5">
+                <div className="w-14 h-14 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-5 group-hover:bg-[#c9a227]/20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                   <Icon size={26} className="text-[#c9a227]" strokeWidth={1.75} />
                 </div>
 
-                {/* Green divider */}
-                <div className="w-10 h-0.5 bg-[#6b9e2b] rounded-full mb-4" />
+                {/* Green divider — grows on hover */}
+                <div className="w-10 h-0.5 bg-[#6b9e2b] rounded-full mb-4 group-hover:w-16 transition-all duration-300" />
 
-                <h3 className="font-[family-name:var(--font-heading)] font-bold text-[#1a1a2e] text-lg mb-2">
+                <h3 className="font-[family-name:var(--font-heading)] font-bold text-[#1a1a2e] text-lg mb-2 group-hover:text-[#c9a227] transition-colors duration-300">
                   {pillar.title}
                 </h3>
                 <p className="font-[family-name:var(--font-body)] text-[#7a7a7a] text-sm leading-relaxed">
