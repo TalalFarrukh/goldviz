@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import {
   Cormorant_Garamond,
   Playfair_Display,
@@ -121,7 +122,21 @@ export default function RootLayout({
       lang="en-PK"
       className={`${cormorantDisplay.variable} ${playfairHeading.variable} ${latoBody.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GX3LLBJP46"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GX3LLBJP46');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
