@@ -79,6 +79,12 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
 
+  verification: {
+    other: {
+      "facebook-domain-verification": "q2q3h8ubco97drcj7561315irtlbhw",
+    },
+  },
+
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
